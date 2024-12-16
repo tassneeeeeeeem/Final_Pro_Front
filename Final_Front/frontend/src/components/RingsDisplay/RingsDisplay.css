@@ -1,0 +1,75 @@
+
+
+.Rings-dispaly-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* تنظيم الأعمدة */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.Rings-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.Rings-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.Rings-item-img-container {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Ring-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+
+.Rings-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+
+.Rings-item-name-rating p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    color:gray;
+}
+
+.Rings-item-desc {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.Rings-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+
+}
+
+
+.Rings-item-name-rating img {
+    width: 60px; 
+    height: auto;
+}
